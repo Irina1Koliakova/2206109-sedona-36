@@ -66,7 +66,7 @@ html {
   right: 16px;
   bottom: -2px;
   left: 16px;
-  height: 2px;
+  height: 0;
   width: auto;
   content: "";
   border: 2px solid #756257;
@@ -372,6 +372,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .services-text {
@@ -575,6 +576,7 @@ body {
 }
 
 .subscription-button {
+  font-family: inherit;
   display: inline-block;
   border-radius: 0 4px 4px 0;
   border: none;
@@ -787,6 +789,10 @@ body {
 
 .control-input[type="checkbox"]:hover + .control-mark {
   opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background: #3f5e72;
 }
 
 /* Radio */
@@ -1080,6 +1086,7 @@ body {
 }
 
 .catalog-filter-submit {
+  font-family: inherit;
   border-radius: 4px;
   border: none;
   padding: 8px 50px;
@@ -1110,6 +1117,7 @@ body {
 }
 
 .catalog-filter-reset {
+  font-family: inherit;
   width: 191px;
   background-color: transparent;
   border: none;
@@ -1465,7 +1473,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  background-image: url(../icons/closure.svg);
+  background-image: url("../icons/closure.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1639,6 +1647,7 @@ body {
 }
 
 .appointment-button {
+  font-family: inherit;
   height: 60px;
   background: #83b3d3;
   border: none;
